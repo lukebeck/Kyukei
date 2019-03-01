@@ -38,10 +38,10 @@ const Info = styled.table`
   text-align: left;
   margin-top: 15px;
   tr {
-      margin: 5px;
+      margin: 5px 0;
       padding: 5px;
       td {
-          margin: 5px;
+          margin: 5px 0;
           padding: 5px;
       }
       .centred {
@@ -70,17 +70,7 @@ export default class Results extends Component {
                     <tr>
                         <td>
                             <b>
-                                Correct Answer:
-                            </b>
-                        </td>
-                        <td className="centred">
-                            {this.props.answer}
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <b>
-                                Your Answer:
+                                Your answer:
         
                             </b>
                         </td>
@@ -88,9 +78,18 @@ export default class Results extends Component {
                             {this.props.results}
                         </td>
                     </tr>
+                    <tr>
+                        <td>
+                            <b>
+                                Correct answer:
+                            </b>
+                        </td>
+                        <td className="centred">
+                            {this.props.answer}
+                        </td>
+                    </tr>
                 </Info>
-                <Button onClick={this.handleSubmit}>Reset</Button>
-                <Button ><a href="https://www.google.com">↪ Google</a></Button>
+                <Button onClick={this.handleSubmit}>Go again</Button>
             </Container>
         )
     }
