@@ -1,48 +1,19 @@
-import React, { Component } from 'react'
-import styled from 'styled-components'
-
-const Container = styled.div`
-    height: 150px;
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-`
-
-const Button = styled.button`
-  border: none;
-  border-bottom: black solid 3px;
-  padding: 10px;
-  margin: 10px;
-  width: 120px;
-  flex: none;
-  display: flex;
-  justify-content: center;
-  :hover {
-      color: ${props => props.theme.main};
-      border-bottom: ${props => props.theme.main} solid 3px;
-      outline: 0;
-  }
-  a {
-      text-decoration: none;
-      :visited{
-          color: black;
-      }
-      :hover {
-          color: ${props => props.theme.main};
-        }
-  }
-`;
+import React, { Component } from 'react';
+import styled from 'styled-components';
+import Button from './styles/Button';
+import Container from './styles/Container'
 
 const Info = styled.table`
   width: 220px;
   text-align: left;
-  margin-top: 15px;
+  margin-top: 0;
+  font-size: 22px;
   tr {
-      margin: 5px 0;
-      padding: 5px;
+      margin: 0;
+      padding: 0;
       td {
-          margin: 5px 0;
-          padding: 5px;
+          margin-top: 5px;
+          padding: 5px 0;
       }
       .centred {
           text-align: center;
@@ -93,6 +64,4 @@ export default class Results extends Component {
             </Container>
         )
     }
-}
-
-
+};

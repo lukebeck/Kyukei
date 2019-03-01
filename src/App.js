@@ -1,19 +1,18 @@
-import React, { Component, Fragment } from 'react'
-import styled, { createGlobalStyle, ThemeProvider } from 'styled-components'
-import data from './lib/data.json'
-import shuffle from './lib/shuffle'
-import Options from './Options'
-import Results from './Results'
+import React, { Component, Fragment } from 'react';
+import styled, { createGlobalStyle, ThemeProvider } from 'styled-components';
+import data from './lib/data.json';
+import shuffle from './lib/shuffle';
+import Options from './Options';
+import Results from './Results';
 
 const setTest = (data) => {
   let choices = shuffle(data).slice(0, 4)
   let question = choices[0]
   let answers = shuffle(choices).map(choice => choice.answer)
   return { question: question, answers: answers }
-}
+};
 
-const quiz = setTest(data)
-
+const quiz = setTest(data);
 
 const theme = {
   bg: "#fff",
@@ -21,11 +20,11 @@ const theme = {
   main: "pink"
 };
 
-const invertTheme = ({ fg, bg }) => ({
-  fg: bg,
-  bg: fg,
-  main: "pink"
-});
+// const invertTheme = ({ fg, bg }) => ({
+//   fg: bg,
+//   bg: fg,
+//   main: "pink"
+// });
 
 const GlobalStyle = createGlobalStyle`
 body {
@@ -35,7 +34,7 @@ body {
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   background: ${props => props.theme.main};
-}
+};
 
 h1 {
   font-size: 100px;
@@ -43,14 +42,13 @@ h1 {
 }
 `;
 
-
-const Container = styled.div`
+const Main = styled.div`
   display: flex;
   justify-content: center;
   padding: 10px;
 `;
 
-const Main = styled.div`
+const Card = styled.div`
   background-color: ${props => props.theme.bg};
   color: ${props => props.theme.fg};
   flex: none;
@@ -64,14 +62,12 @@ const Main = styled.div`
   text-align: center;
 `;
 
-
 const Hana = styled.div`
   position: absolute;
   font-size: 60px;
   margin: 0 30px;
   transform: rotate(330deg);
 `;
-
 
 class App extends Component {
   constructor(props) {
@@ -103,29 +99,29 @@ class App extends Component {
   render() {
     const flipped = this.state.flipped
     return (
-      <Container>
+      <Main>
         <ThemeProvider theme={theme}>
           <Fragment>
             <GlobalStyle />
             {!flipped
               ? <ThemeProvider theme={theme}>
                 {/* theme={invertTheme} */}
-                <Main>
+                <Card>
                   <h1>{this.state.test.question}</h1>
                   <Options options={this.state.answers} onSubmit={this.handleSubmit} />
-                </Main>
+                </Card>
               </ThemeProvider>
-              : <Main>
+              : <Card>
                 {(this.state.answer === this.state.test.answer) && <Hana><span role="img" aria-label="white-flower">💮</span></Hana>}
                 <h1>{this.state.test.question}</h1>
                 <Results answer={this.state.test.answer} results={this.state.answer} onSubmit={this.handleReplaySubmit} />
-              </Main>
+              </Card>
             }
           </Fragment>
         </ThemeProvider>
-      </Container>
+      </Main>
     );
   }
-}
+};
 
 export default App;
