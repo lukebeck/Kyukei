@@ -58,7 +58,7 @@ const Card = styled.div`
   padding: 30px 0;
   border: solid 1px ${props => props.theme.fg};
   border-radius: 30px;
-  box-shadow: 3px 3px 3px rgb(30,30,30);
+  box-shadow: 3px 3px rgb(30,30,30);
   text-align: center;
 `;
 
