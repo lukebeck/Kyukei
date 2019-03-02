@@ -16,7 +16,7 @@ self.__precacheManifest = [
     "url": "/kyukei/static/js/2.cdcfef16.chunk.js"
   },
   {
-    "revision": "eb6247470b41d11491f856804624c17b",
+    "revision": "9eb8efe8af8cc8d8de13968f39f47a1e",
     "url": "/kyukei/index.html"
   }
 ];
