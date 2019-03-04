@@ -16,13 +16,41 @@ export default class Options extends Component {
         return (
             <Container>
                 {this.props.options.map(
-                    (option) => <Button
+                    (option) => <Option
                         key={option}
+                        id={option}
                         onClick={() => this.handleSubmit(option)}>{
                             option}
-                    </Button>
+                    </Option>
                 )}
             </Container>
         )
     }
 };
+
+class Option extends Component {
+    constructor(props){
+        super(props)
+        this.handleClick = this.handleClick.bind(this)
+        this.state = {
+            class: this.props.className
+
+        }
+    }
+
+    handleClick(value){
+        this.setState({ class: "incorrect"});
+        this.props.onClick()
+    }
+
+    render(){
+        return(
+            <Button
+                onClick={this.handleClick}
+                className={this.state.class}
+                >
+                {this.props.children}
+            </Button>
+        )
+    }
+}

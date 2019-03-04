@@ -14,15 +14,15 @@ const Button = styled.button`
     flex: none;
     display: flex;
     justify-content: center;
-    @media only screen and (min-width: 600px) {
-    :hover {
-        color: ${props => props.theme.main};
-        border-bottom: ${props => props.theme.main} solid 3px;
-        outline: 0;
-    }
+    :focus {outline:0;}
     :visited{
           color: black;
     }
+    @media (hover) {
+        :hover {
+            color: ${props => props.theme.main};
+            border-bottom: ${props => props.theme.main} solid 3px;
+        }
     }
 `;
 
