@@ -1,7 +1,7 @@
 self.__precacheManifest = [
   {
-    "revision": "404ed47cb5abe4f1634b",
-    "url": "/kyukei/static/js/main.404ed47c.chunk.js"
+    "revision": "3fbae7c89099e1926538",
+    "url": "/kyukei/static/js/main.3fbae7c8.chunk.js"
   },
   {
     "revision": "94835c579f9e0f2bc4e9",
@@ -16,7 +16,7 @@ self.__precacheManifest = [
     "url": "/kyukei/static/js/2.cdcfef16.chunk.js"
   },
   {
-    "revision": "78ec05df4d49080efe07e6c74a04d14e",
+    "revision": "a38b1ff5927457ccc0dc64e1eb9c6275",
     "url": "/kyukei/index.html"
   }
 ];
