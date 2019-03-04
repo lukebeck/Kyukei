@@ -1,7 +1,7 @@
 {
   "name": "kyukei",
   "homepage": "https://lukebeck.github.io/kyukei",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "private": true,
   "dependencies": {
     "gh-pages": "^2.0.1",

@@ -24,6 +24,7 @@ const Button = styled.button`
             border-bottom: ${props => props.theme.main} solid 3px;
         }
     }
+
 `;
 
 export default Button;
