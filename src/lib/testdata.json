@@ -1,5 +1,6 @@
-[
-    {
+{
+    "あ": [
+     {
         "question": "あ",
         "answer": "a"
     },
@@ -18,7 +19,8 @@
     {
         "question": "お",
         "answer": "o"
-    },
+    }],
+    "か": [
     {
         "question": "か",
         "answer": "ka"
@@ -38,8 +40,8 @@
     {
         "question": "こ",
         "answer": "ko"
-    },
-    {
+    }],
+    "さ": [{
         "question": "さ",
         "answer": "sa"
     },
@@ -58,5 +60,239 @@
     {
         "question": "そ",
         "answer": "so"
-    }
-]
+    }],
+    "た": [{
+        "question": "た",
+        "answer": "ta"
+    },
+    {
+        "question": "ち",
+        "answer": "chi"
+    },
+    {
+        "question": "つ",
+        "answer": "tsu"
+    },
+    {
+        "question": "て",
+        "answer": "te"
+    },
+    {
+        "question": "と",
+        "answer": "to"
+    }],
+    "な": [{
+        "question": "な",
+        "answer": "na"
+    },
+    {
+        "question": "に",
+        "answer": "ni"
+    },
+    {
+        "question": "ぬ",
+        "answer": "nu"
+    },
+    {
+        "question": "ね",
+        "answer": "ne"
+    },
+    {
+        "question": "の",
+        "answer": "no"
+    }],
+    "は": [
+    {
+        "question": "は",
+        "answer": "ha"
+    },
+    {
+        "question": "ひ",
+        "answer": "hi"
+    },
+    {
+        "question": "ふ",
+        "answer": "fu"
+    },
+    {
+        "question": "へ",
+        "answer": "he"
+    },
+    {
+        "question": "ほ",
+        "answer": "ho"
+    }],
+    "ま": [
+    {
+        "question": "ま",
+        "answer": "ma"
+    },
+    {
+        "question": "み",
+        "answer": "mi"
+    },
+    {
+        "question": "む",
+        "answer": "mu"
+    },
+    {
+        "question": "め",
+        "answer": "me"
+    },
+    {
+        "question": "も",
+        "answer": "mo"
+    }],
+    "や": [
+    {
+        "question": "や",
+        "answer": "ya"
+    },
+    {
+        "question": "ゆ",
+        "answer": "yu"
+    },
+    {
+        "question": "よ",
+        "answer": "yo"
+    }],
+    "ら": [
+    {
+        "question": "ら",
+        "answer": "ra"
+    },
+    {
+        "question": "り",
+        "answer": "ri"
+    },
+    {
+        "question": "る",
+        "answer": "ru"
+    },
+    {
+        "question": "れ",
+        "answer": "re"
+    },
+    {
+        "question": "ろ",
+        "answer": "ro"
+    }],
+    "わ": [
+    {
+        "question": "わ",
+        "answer": "wa"
+    },
+    {
+        "question": "を",
+        "answer": "wo"
+    },
+    {
+        "question": "ん",
+        "answer": "n"
+    }],
+    "が": [
+    {
+        "question": "が",
+        "answer": "ga"
+    },
+    {
+        "question": "ぎ",
+        "answer": "gi"
+    },
+    {
+        "question": "ぐ",
+        "answer": "gu"
+    },
+    {
+        "question": "げ",
+        "answer": "ge"
+    },
+    {
+        "question": "ご",
+        "answer": "go"
+    }],
+    "ざ": [
+    {
+        "question": "ざ",
+        "answer": "za"
+    },
+    {
+        "question": "じ",
+        "answer": "ji"
+    },
+    {
+        "question": "ず",
+        "answer": "zu"
+    },
+    {
+        "question": "ぜ",
+        "answer": "ze"
+    },
+    {
+        "question": "ぞ",
+        "answer": "zo"
+    }],
+    "だ": [
+    {
+        "question": "だ",
+        "answer": "da"
+    },
+    {
+        "question": "ぢ",
+        "answer": "dji"
+    },
+    {
+        "question": "づ",
+        "answer": "dzu"
+    },
+    {
+        "question": "で",
+        "answer": "de"
+    },
+    {
+        "question": "ど",
+        "answer": "do"
+    }],
+    "ば": [
+    {
+        "question": "ば",
+        "answer": "ba"
+    },
+    {
+        "question": "び",
+        "answer": "bi"
+    },
+    {
+        "question": "ぶ",
+        "answer": "bu"
+    },
+    {
+        "question": "べ",
+        "answer": "be"
+    },
+    {
+        "question": "ぼ",
+        "answer": "bo"
+    }],
+    "ぱ": [
+    {
+        "question": "ぱ",
+        "answer": "pa"
+    },
+    {
+        "question": "ぴ",
+        "answer": "pi"
+    },
+    {
+        "question": "ぷ",
+        "answer": "pu"
+    },
+    {
+        "question": "ぺ",
+        "answer": "pe"
+    },
+    {
+        "question": "ぽ",
+        "answer": "po"
+    }]
+}

@@ -5,13 +5,12 @@ import Container from "./styles/Container";
 class Choice extends Component {
   constructor(props) {
     super(props);
-    this.handleClick = this.handleClick.bind(this);
     this.state = {
       class: ""
     };
   }
 
-  handleClick(value) {
+  handleClick = (handleClickEvent) => {
     this.props.answer === this.props.value
       ? this.props.onClick()
       : this.setState({ class: "incorrect" });
@@ -27,13 +26,8 @@ class Choice extends Component {
 }
 
 class Front extends Component {
-  constructor(props) {
-    super(props);
-    this.handleSubmit = this.handleSubmit.bind(this);
-  }
-
-  handleSubmit(value) {
-    this.props.onSubmit(value);
+  handleSubmit = (handleSubmitEvent) => {
+    this.props.onSubmit(handleSubmitEvent);
   }
 
   render() {

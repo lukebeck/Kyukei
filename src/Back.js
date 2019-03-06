@@ -6,25 +6,18 @@ import Container from "./styles/Container";
 const Info = styled.div`
   width: 220px;
   text-align: left;
-  margin-top: 0;
-  font-size: 50px;
+  font-size: 3rem;
   display: flex;
   justify-content: center;
   p {
-    margin: 0;
+    margin: 0 0 2.5rem 0;
     font-style: italic;
-    font-weight: 400;
   }
 `;
 
 class Back extends Component {
-  constructor(props) {
-    super(props);
-    this.handleSubmit = this.handleSubmit.bind(this);
-  }
-
-  handleSubmit(value) {
-    this.props.onSubmit(value);
+  handleSubmit = (handleSubmitEvent) => {
+    this.props.onSubmit(handleSubmitEvent);
   }
 
   render() {
